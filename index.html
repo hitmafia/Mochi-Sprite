@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mochi Sprite: coming soon</title>
+<meta name="description" content="Mochi Sprite is a pixel drawing app, coming soon to Steam.">
+<link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/hitmafia/mochi-sprite/main/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: #f0f1f5;
+    color: #17181d;
+    font-family: 'Jost', system-ui, sans-serif;
+    min-height: 100vh;
+    padding: 72px 24px 80px;
+  }
+  main { max-width: 1040px; margin: 0 auto; text-align: center; }
+  .tile {
+    width: 176px; height: 176px;
+    margin: 0 auto 32px;
+    border-radius: 40px;
+    background: #ff4f9a;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 18px 40px rgba(255, 79, 154, 0.28);
+  }
+  .tile svg { width: 125px; height: auto; image-rendering: pixelated; }
+  h1 { font-size: 56px; font-weight: 500; letter-spacing: -1px; margin: 0 0 12px; line-height: 1.05; }
+  .soon { font-size: 20px; color: #6d7180; margin: 0 0 28px; line-height: 1.5; }
+  .badge {
+    display: inline-block;
+    font-size: 14px; letter-spacing: 1px; text-transform: uppercase;
+    color: #ffffff; background: #17181d;
+    border-radius: 999px; padding: 8px 18px;
+  }
+  figure { margin: 64px 0 0; }
+  .window {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #dddee3;
+    box-shadow: 0 24px 60px rgba(23, 24, 29, 0.12);
+    background: #141519;
+  }
+  .window img { display: block; width: 100%; height: auto; }
+  figcaption { margin-top: 20px; font-size: 18px; color: #6d7180; }
+  @media (max-width: 640px) {
+    body { padding: 48px 16px 56px; }
+    h1 { font-size: 40px; }
+    .tile { width: 136px; height: 136px; border-radius: 28px; }
+    .tile svg { width: 96px; }
+    figure { margin-top: 44px; }
+    .window { border-radius: 8px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="tile">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="3 7 25 17" shape-rendering="crispEdges" role="img" aria-label="Mochi Sprite mascot">
+      <path fill="#46417c" d="M10 7h11v1h-11zM8 8h2v1h-2zM21 8h2v1h-2zM7 9h1v1h-1zM23 9h1v1h-1zM6 10h1v1h-1zM24 10h1v1h-1zM5 11h1v1h-1zM25 11h1v1h-1zM5 12h1v1h-1zM25 12h1v1h-1zM4 13h1v1h-1zM26 13h1v1h-1zM4 14h1v1h-1zM10 14h1v1h-1zM20 14h1v1h-1zM26 14h1v1h-1zM4 15h1v1h-1zM11 15h1v1h-1zM19 15h1v1h-1zM26 15h1v1h-1zM4 16h1v1h-1zM9 16h3v1h-3zM19 16h3v1h-3zM26 16h1v1h-1zM3 17h1v1h-1zM13 17h1v1h-1zM17 17h1v1h-1zM27 17h1v1h-1zM3 18h1v1h-1zM14 18h3v1h-3zM27 18h1v1h-1zM3 19h1v1h-1zM27 19h1v1h-1zM4 20h1v1h-1zM26 20h1v1h-1zM5 21h2v1h-2zM24 21h2v1h-2zM7 22h1v1h-1zM11 22h9v1h-9zM23 22h1v1h-1zM8 23h3v1h-3zM20 23h3v1h-3z"/>
+      <path fill="#ffdac5" d="M10 8h11v1h-11zM8 9h2v1h-2zM21 9h2v1h-2zM7 10h1v1h-1zM23 10h1v1h-1zM6 11h1v1h-1zM24 11h1v1h-1zM6 12h1v1h-1zM24 12h1v1h-1zM5 13h1v1h-1zM25 13h1v1h-1zM5 14h1v1h-1zM25 14h1v1h-1zM5 15h1v1h-1zM25 15h1v1h-1zM5 16h1v1h-1zM25 16h1v1h-1zM4 17h1v1h-1zM26 17h1v1h-1zM4 18h1v1h-1zM26 18h1v1h-1zM4 19h1v1h-1zM26 19h1v1h-1zM5 20h2v1h-2zM24 20h2v1h-2zM7 21h1v1h-1zM23 21h1v1h-1zM8 22h3v1h-3zM20 22h3v1h-3z"/>
+      <path fill="#f6e8e0" d="M10 9h11v1h-11zM8 10h15v1h-15zM7 11h17v1h-17zM7 12h17v1h-17zM6 13h19v1h-19zM6 14h4v1h-4zM11 14h9v1h-9zM21 14h4v1h-4zM6 15h5v1h-5zM12 15h7v1h-7zM20 15h5v1h-5zM6 16h3v1h-3zM12 16h7v1h-7zM22 16h3v1h-3zM5 17h3v1h-3zM10 17h3v1h-3zM14 17h3v1h-3zM18 17h3v1h-3zM23 17h3v1h-3zM5 18h9v1h-9zM17 18h9v1h-9zM5 19h3v1h-3zM9 19h13v1h-13zM23 19h3v1h-3zM8 20h15v1h-15zM8 21h15v1h-15z"/>
+      <path fill="#ffa2ac" d="M8 17h2v1h-2zM21 17h2v1h-2z"/>
+      <path fill="#ffd2b9" d="M8 19h1v1h-1zM22 19h1v1h-1zM7 20h1v1h-1zM23 20h1v1h-1z"/>
+    </svg>
+  </div>
+  <h1>Mochi Sprite</h1>
+  <p class="soon">A pixel drawing app, coming soon to Steam.</p>
+  <span class="badge">Coming soon</span>
+
+  <figure>
+    <div class="window">
+      <picture>
+        <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/hitmafia/mochi-sprite/main/app-screenshot-mobile.png">
+        <img src="https://raw.githubusercontent.com/hitmafia/mochi-sprite/main/app-screenshot.png" alt="Mochi Sprite editor showing an animal sprite sheet, a 10-frame move and dead animation timeline, the shading panel, and the layers and palette panels" width="1926" height="1300">
+      </picture>
+    </div>
+    <figcaption>Sprite sheets, animation timelines, shading, layers, and palettes in one editor.</figcaption>
+  </figure>
+</main>
+</body>
+</html>
